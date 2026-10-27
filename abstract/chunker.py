@@ -25,7 +25,7 @@ class ChunkerStr(Chunker):
                 cur_words.append(word)
                 if count >= self.chunk_size :
                     text_chunk = " ".join(cur_words)
-                    yield Chunk(i,index,text_chunk,self.source)
+                    yield Chunk(i+1,index,text_chunk,self.source)
                     count = 0
                     cur_words = []
                     index+=1
