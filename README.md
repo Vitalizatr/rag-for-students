@@ -42,9 +42,6 @@ pip install -r requirements.txt
 3. **Ingest Documents:**
 Place your mathematical PDFs or documents into the data/ directory and run the ingestion script to populate the vector store: 
 
-bash
-
-python ingest.py
 
 4. **Run the Application:** 
 
