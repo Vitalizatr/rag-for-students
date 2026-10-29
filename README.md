@@ -32,19 +32,13 @@ The entire lifecycle of a request is orchestrated by the RagUseCase class: 
 
 1. **Clone the repository:** 
 
-bash
 
-git clone https://github.com/your-username/math-rag-system.git
-cd math-rag-system
-
-Используйте код с осторожностью.
 2. **Install dependencies:** 
 
 bash
 
 pip install -r requirements.txt
 
-Используйте код с осторожностью.
 3. **Ingest Documents:**
 Place your mathematical PDFs or documents into the data/ directory and run the ingestion script to populate the vector store: 
 
@@ -52,14 +46,12 @@ bash
 
 python ingest.py
 
-Используйте код с осторожностью.
 4. **Run the Application:** 
 
 bash
 
 python main.py
 
-Используйте код с осторожностью.
 
 ### Code Example
 
@@ -77,7 +69,6 @@ response = rag.execute(query)
 print("System Response:")
 print(response)
 
-Используйте код с осторожностью.
 
 ### Prompt Configuration
 
