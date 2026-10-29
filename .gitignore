@@ -1,2 +1,61 @@
+# --- Специфичное для RAG / AI ---
+# Секреты и ключи API (OpenAI, Hugging Face, LangChain и т.д.)
+.env
+.env.local
+.env.*
+!.env.example
+
+# Локальные векторные базы данных (Vector Stores)
+**/chroma/
+**/faiss/
+**/qdrant/
+**/lancedb/
+.milvus/
+vector_store/
+vector_db/
+
+# Кэш моделей, эмбеддингов и локальные веса (Hugging Face, Ollama)
+.cache/
+**/models/
+**/weights/
+*.bin
+*.onnx
+*.pt
+*.pth
+
+# Локальные документы для индексации (чтобы случайно не залить приватные PDF/TXT)
+**/data/
+**/documents/
+**/inputs/
+!**/data/sample.txt
+
+
+# --- Стандартный Python ---
+# Виртуальное окружение
 .venv/
-cpp/
+ENV/
+env/
+
+# Кэш компиляции и байт-код
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Логи и дампы памяти
+*.log
+local_settings.py
+pod/
+
+# Кэш инструментов тестирования и линтеров
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.ipynb_checkpoints/
+
+
+# --- Настройки IDE (опционально) ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
